@@ -36,7 +36,7 @@ jobs:
         uses: "google-github-actions/auth@v0.4.0"
         with:
           token_format: "access_token"
-          workload_identity_provider: "$WORKLOAD_ID_PROVIDER"
+          workload_identity_provider: ${{ env.WORKLOAD_ID_PROVIDER }}
           service_account: ${{ env.SA }}
 
       - name: Docker configuration
