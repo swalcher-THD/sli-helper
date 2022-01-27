@@ -37,7 +37,7 @@ jobs:
         with:
           token_format: "access_token"
           workload_identity_provider: "projects/48644007777/locations/global/workloadIdentityPools/sli-helper-pool/providers/test-provider"
-          service_account: ${{ env.SA }}
+          service_account: "${SA}"
 
       - name: Docker configuration
         run: |-
