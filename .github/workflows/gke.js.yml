@@ -37,7 +37,7 @@ jobs:
         with:
           token_format: "access_token"
           workload_identity_provider: "$WORKLOAD_ID_PROVIDER"
-          service_account: "$SA"
+          service_account: ${{ env.SA }}
 
       - name: Docker configuration
         run: |-
